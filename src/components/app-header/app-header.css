@@ -1,0 +1,12 @@
+.app-header {
+}
+
+.app-header h1 {
+	margin-bottom: 0;
+}
+
+.app-header p {
+	font-size: 1.125rem;
+	font-weight: 500;
+	margin-bottom: 0;
+}
