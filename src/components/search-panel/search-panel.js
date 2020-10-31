@@ -1,22 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import InputGroup from 'react-bootstrap/InputGroup';
-import Button from 'react-bootstrap/Button';
 import FormControl from 'react-bootstrap/FormControl';
 
-const SearchPanel = () => {
+const SearchPanel = ({ onSearch }) => {
+	const [userInput, setUserInput] = useState('');
+
+	const onUserInput = (evt) => {
+		const request = evt.target.value;
+		setUserInput(request);
+		onSearch(request);
+	};
+
 	return (
-		<InputGroup className='mb-3' type='text' placeholder='Search'>
+		<InputGroup type='text' placeholder='Search'>
 			<FormControl
 				placeholder='Search'
 				aria-label='Search'
 				aria-describedby='basic-addon2'
+				onChange={onUserInput}
+				value={userInput}
 			/>
-			<InputGroup.Append>
-				<Button variant='info'>All</Button>
-				<Button variant='outline-secondary'>Active</Button>
-				<Button variant='outline-secondary'>Done</Button>
-			</InputGroup.Append>
 		</InputGroup>
 	);
 };

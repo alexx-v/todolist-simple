@@ -1,8 +1,6 @@
-.app-header {
-}
-
 .app-header h1 {
 	margin-bottom: 0;
+	font-weight: 600;
 }
 
 .app-header p {

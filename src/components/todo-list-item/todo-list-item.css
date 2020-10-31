@@ -1,13 +1,5 @@
-/* .todo-list-item {
-	outline: 2px solid red;
-} */
-
 .todo-list-item button {
 	width: 35px;
-}
-
-.todo-list-item p {
-	margin: 0;
 }
 
 .todo-list-item .important {
@@ -15,6 +7,17 @@
 	color: #007bff;
 }
 
-.todo-list-item .linethrough {
+.todo-list-item .done {
 	text-decoration: line-through;
+}
+.todo-list-item .task {
+	cursor: pointer;
+	margin: 0;
+	margin-right: 1rem;
+	flex-grow: 1;
+	word-break: break-all;
+}
+
+.todo-list-item .buttons {
+	flex-wrap: nowrap;
 }

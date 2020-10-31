@@ -1,8 +1,4 @@
 .app {
-	margin-top: 20px;
-	outline: 2px solid red;
-}
-
-.col {
-	outline: 2px solid yellowgreen;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 }
